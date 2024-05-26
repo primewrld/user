@@ -1,0 +1,22 @@
+So I heard some of us don't understand the assignment, Let me recap.
+
+- Create a Profile Component.
+- The profile component should receive a prop that holds a user array (This is an array of user objects with three keys, Name, Boi/description, and DateOfBirth)
+- The Profile page needs to have a component named UserDetails for rendering each user's details.
+- The UserDetails component should receive a prop for each user. e,g pass a prop named "user" to the UserDetails component.
+- You should utilize the map method to map over users on the profile page and then pass each user as a prop to UserDetails.
+- The UserDetails should receive those props and then render the details of that particular user.
+- Remember to use "useEffect" to set users to a state variable on the first page load. I showed an example in class and also gave a boilerplate code
+
+This assignment is open-ended so you can do it as you choose but be sure you do it efficiently.
+
+
+
+
+In this implementation:
+
+The Profile component receives a prop users, which is an array of user objects.
+The UserDetails component receives a prop user which contains the details of a particular user.
+The useEffect hook in the Profile component sets the initial state of the userList using the users prop.
+The map method is used to iterate over each user in the userList state and render the UserDetails component for each user.
+Example usage is provided at the end, where the Profile component is rendered with usersData as the prop.
